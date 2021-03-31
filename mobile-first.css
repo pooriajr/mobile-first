@@ -1,0 +1,53 @@
+html {
+  max-width: 460px;
+  height: 800px;
+  position: relative;
+  margin: 20px auto;
+  border: 25px solid #222;
+  border-radius: 50px;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+html.bevels {
+  border-top: 80px solid #222;
+  border-bottom: 80px solid #222;
+  height: 720px;
+}
+
+html.bevels::before{
+  content: '';
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  background-color: #ddd;
+  left: calc(50% - 50px);
+  top: -40px;
+  border-radius: 20px;
+}
+
+html.bevels::after{
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #ddd;
+  left: 30%;
+  top: -45px;
+  border-radius: 20px;
+}
+
+html.notch::before{
+  content: '';
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  background-color: #ddd;
+  left: calc(50% - 50px);
+  top: -30px;
+  border-radius: 20px;
+}
