@@ -41,13 +41,28 @@ html.bevels::after{
   border-radius: 20px;
 }
 
+html.notch {
+  padding-top: 30px;
+}
+
 html.notch::before{
   content: '';
-  width: 100px;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  background-color: #222;
+  left: calc(50% - 100px);
+  top: -20px;
+  border-radius: 20px;
+}
+
+html.notch::after{
+  content: '';
+  width: 60px;
   height: 10px;
   position: absolute;
   background-color: #ddd;
-  left: calc(50% - 50px);
-  top: -30px;
+  left: calc(50% - 30px);
+  top: 5px;
   border-radius: 20px;
 }
