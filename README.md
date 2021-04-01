@@ -8,7 +8,7 @@ You just finished building something and it looks great on your computer. Then y
 
 ## Usage
 
-Paste this tag in the <head> element of the page:
+Paste this tag in the `<head>` element of the page:
 
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pooriar/mobile-first/mobile-first.min.css">
@@ -21,7 +21,7 @@ That's it!
 - Forces the body element to only scroll vertically.
 - All styles disappear at mobile viewport widths so it doesn't interfere with the real thing.
 - Adds a phone-in-hand visual to really drive it home.
-- Only add the minimum necessary styles to the <HTML> and <body> tags.
+- Only applies the minimum necessary styles to the `<HTML>` and `<body>` tags.
 
 ## Options
 
