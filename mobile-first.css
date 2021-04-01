@@ -1,68 +1,84 @@
-html {
-  max-width: 460px;
-  height: 800px;
-  position: relative;
-  margin: 20px auto;
-  border: 25px solid #222;
-  border-radius: 50px;
-  overflow: auto;
+:root {
+  --mobile-width: 460px;
 }
 
-body {
-  height: 100%;
-  overflow: auto;
-}
+@media screen and (min-width: 460px) {
 
-html.bevels {
-  border-top: 80px solid #222;
-  border-bottom: 80px solid #222;
-  height: 720px;
-}
+  html {
+    background: #fefefe;
+    overflow: auto;
+  }
 
-html.bevels::before{
-  content: '';
-  width: 100px;
-  height: 10px;
-  position: absolute;
-  background-color: #ddd;
-  left: calc(50% - 50px);
-  top: -40px;
-  border-radius: 20px;
-}
+  body {
+    width: var(--mobile-width);
+    height: 800px;
+    position: relative;
+    margin: 20px auto;
+    border: 25px solid #222;
+    border-radius: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
 
-html.bevels::after{
-  content: '';
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background-color: #ddd;
-  left: 30%;
-  top: -45px;
-  border-radius: 20px;
-}
+  body::after {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 
-html.notch {
-  padding-top: 30px;
-}
+  body.bezels {
+    border-top: 80px solid #222;
+    border-bottom: 80px solid #222;
+  }
 
-html.notch::before{
-  content: '';
-  width: 200px;
-  height: 50px;
-  position: absolute;
-  background-color: #222;
-  left: calc(50% - 100px);
-  top: -20px;
-  border-radius: 20px;
-}
+  body.bezels::before{
+    content: '';
+    width: 100px;
+    height: 10px;
+    position: fixed;
+    background-color: #444;
+    left: calc(50% - 50px);
+    top: 35px;
+    border-radius: 20px;
+    margin-top: inherit;
+  }
 
-html.notch::after{
-  content: '';
-  width: 60px;
-  height: 10px;
-  position: absolute;
-  background-color: #ddd;
-  left: calc(50% - 30px);
-  top: 5px;
-  border-radius: 20px;
+  body.bezels::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    background-color: #444;
+    left: calc(50% - 90px);
+    top: 30px;
+    border-radius: 20px;
+    margin-top: inherit;
+  }
+
+  body.notch::before{
+    content: '';
+    width: 250px;
+    height: 50px;
+    position: fixed;
+    background-color: #222;
+    left: calc(50% - 125px);
+    top: 0px;
+    margin-top: inherit;
+    border-radius: 20px;
+  }
+
+  body.notch::after{
+    content: '';
+    width: 80px;
+    height: 10px;
+    position: fixed;
+    background-color: #444;
+    left: calc(50% - 40px);
+    top: 20px;
+    margin-top: inherit;
+    border-radius: 20px;
+  }
+
 }

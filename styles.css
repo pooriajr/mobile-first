@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  background: rgb(254, 247, 253);
+  padding: 10px;
+  color: rgb(70, 59, 69);
+}
+
+
+code {
+  background-color: rgb(131, 70, 126);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 5px;
+  display: inline-block;
+  word-break: break-all;
+}
