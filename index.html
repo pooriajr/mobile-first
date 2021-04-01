@@ -8,35 +8,28 @@
     <script src="dist/clipboard.min.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>mobile-first.css</title>
-    <script>
-      function updateVariant(e){ document.body.className = e.value }
-    </script>
   </head>
   <body>
     <h1>mobile-first.css📱</h1>
     <p>
-    mobile-first.css is a tiny stylesheet that makes your <code>&lt;body&gt;</code> element resemble a mobile phone. 
+    mobile-first.css is a tiny stylesheet that makes your desktop view resemble a mobile view. 
     </p>
 
     <h2>Why?</h2>
-    <p>When building on desktop it can be easy to accidentally slip into a desktop-first mentality. This is merely a visual cue to use during development to keep you in the mobile-first mindset.</p>
+    <p>When building on desktop it's easy for me to accidentally slip into a desktop-first mentality. This is a visual cue to use during development to stay in the mobile-first mindset.</p>
 
     <h2>Usage</h2>
     <p>Paste this tag in the <code>&lt;head&gt;</code> element of the page:</p>
     <code>
       &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pooriar/mobile-first/mobile-first.min.css"&gt;
     </code>
-    <p>That's it! When you don't need it anymore, delete the tag.</p>
+    <p>That's it!</p>
 
-    <h2>How does it work?</h2>
-    <p>It adds a few styles to the HTML and &lt;body&gt; tag, nothing else.</p>
-    <p>The result is a viewport with a fixed width and height, like a phone. It only scrolls vertically, and has a 16:9 aspect ratio, which is the most common in phones.</p>
-    <h2>Variants</h2>
-    <p>The simple default is the most practical, but there are also 2 variants for fun. Activate them by adding their class to the body element.</p>
-    <select id="" name="" onchange="updateVariant(this)">
-      <option value="">Default (no class needed)</option>
-      <option value="notch">Notch &lt;body class="notch"&gt;</option>
-      <option value="bezels">Bezels &lt;body class="bezels"&gt;</option>
-    </select>
+    <h2>What does it do exactly?</h2>
+    <p>It adds a dozen styles to the &lt;HTML&gt; and &lt;body&gt; tags.</p>
+    <p>The result is a view with a fixed width and height, like a phone.</p> 
+    <p>It only scrolls vertically, and has a 16:9 aspect ratio, which is the most common in phones.</p>
+    <h2>That's it?</h2>
+    <p>That's it!</p>
   </body>
 </html>
